@@ -39,7 +39,7 @@ const newBook = new AwesomeBooks(bookTitle, bookAuthor);
 newBook.displayBooks();
 
 window.addEventListener('load', () => {
-  contactSession.style.display = 'none';
+   contactSession.style.display = 'none';
   bookSession.style.display = 'none';
   addBookSession.style.display = 'none';
 });
