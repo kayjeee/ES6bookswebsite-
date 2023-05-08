@@ -1,7 +1,7 @@
 import showContact from './modules/showContact.js';
 import displayBooks from './modules/viewAllBooks.js';
-import addBook from './modules/addbook.js';
-import AwesomeBooks from './modules/managebook.js';
+import addBook from './modules/addBook.js';
+import AwesomeBooks from './modules/manageBook.js';
 import { DateTime } from './modules/luxon.js';
 
 const bookAuthor = document.getElementById('author');
