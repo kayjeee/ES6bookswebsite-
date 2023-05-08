@@ -16,9 +16,8 @@ class AwesomeBooks {
       allBooks.style.display = 'block';
       allBooks.innerHTML = books
         .map(
-          (book) =>
-            ` <div class="parent-content"><p class="container__body-title">${book.title} by ${book.author}</p>
-      <button class="container__body-btn" id="${book.id}">Remove</button></div>`
+          (book) => ` <div class="parent-content"><p class="container__body-title">${book.title} by ${book.author}</p>
+      <button class="container__body-btn" id="${book.id}">Remove</button></div>`,
         )
         .join('');
     }
