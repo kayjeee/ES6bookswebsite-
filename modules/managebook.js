@@ -1,4 +1,4 @@
-export default class AwesomeBooks {
+class AwesomeBooks {
   constructor(bookTitle, bookAuthor) {
     this.bookAuthor = bookAuthor;
     this.bookTitle = bookTitle;
@@ -14,8 +14,13 @@ export default class AwesomeBooks {
     } else {
       this.id = 0;
       allBooks.style.display = 'block';
-      allBooks.innerHTML = books.map((book) => ` <div class="parent-content"><p class="container__body-title">${book.title} by ${book.author}</p>
-      <button class="container__body-btn" id="${book.id}">Remove</button></div>`).join('');
+      allBooks.innerHTML = books
+        .map(
+          (book) =>
+            ` <div class="parent-content"><p class="container__body-title">${book.title} by ${book.author}</p>
+      <button class="container__body-btn" id="${book.id}">Remove</button></div>`
+        )
+        .join('');
     }
   }
 
@@ -50,3 +55,5 @@ export default class AwesomeBooks {
     this.displayBooks();
   }
 }
+
+export default AwesomeBooks;
