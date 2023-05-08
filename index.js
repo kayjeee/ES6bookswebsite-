@@ -1,6 +1,6 @@
 import showContact from './modules/showContact.js';
 import displayBooks from './modules/viewAllBooks.js';
-import addBook from './modules/addBook.js';
+import AddBook from './modules/addBook.js';
 import AwesomeBooks from './modules/awesomeBooks.js';
 
 import { DateTime } from './modules/luxon.js';
@@ -15,7 +15,7 @@ const addBookSession = document.getElementById('add-books');
 
 showContact();
 displayBooks();
-addBook();
+AddBook();
 
 setInterval(() => {
   const currentDate = DateTime.now().toLocaleString(DateTime.DATETIME_MED);

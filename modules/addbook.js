@@ -1,4 +1,4 @@
-const addBook = () => {
+const AddBook = () => {
   const contactSession = document.getElementById('contact');
   const bookSession = document.getElementById('books-all');
   const addBookSession = document.getElementById('add-books');
@@ -11,4 +11,4 @@ const addBook = () => {
   });
 };
 
-export default addBook;
+export default AddBook;
