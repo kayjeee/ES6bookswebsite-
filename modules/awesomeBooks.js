@@ -1,4 +1,4 @@
-class AwesomeBooks {
+class awesomeBooks {
   constructor(bookTitle, bookAuthor) {
     this.bookAuthor = bookAuthor;
     this.bookTitle = bookTitle;
@@ -55,4 +55,4 @@ class AwesomeBooks {
   }
 }
 
-export default AwesomeBooks;
+export default awesomeBooks;
